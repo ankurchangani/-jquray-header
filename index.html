@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="css/media.css">
+
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="row justify-between w-m-b">
+                    <div class="w-2">
+                        <div class="logo" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="logo/logo.webp" alt="logo">
+                        </div>
+                    </div>
+                    <div class="toggle w-xxl-none w-xl-none w-l-none w-t-b ">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="header-bar ">
+                        <div class="w-10 w-b-s">
+                            <nav class=" w-b-s">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">
+                                            <span>Home</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <span>About</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <span>Menu</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="">
+                                            <span>blog</span></a>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a href="#">Blog home</a></li>
+
+                                                <li><a href="#">Blog details</a></li>
+                                            </ul>
+
+                                        </div>
+                                    <li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- header-toggle -->
+    <script>
+        $(document).ready(function () {
+            $(".toggle").click(function () {
+                $(".header-bar").fadeToggle(700);
+            });
+        });
+    </script>
+</body>
+
+</html>
